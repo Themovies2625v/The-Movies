@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpirt" content="width=divice-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body link="#ffffff" vlink="#ffffff">
+    
+    
+    <header>
+        <div class="barra-superior">          
+            <!-- poner boton de menu -->
+        	<header class="header">
+                <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+            </header>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="#"></a>
+                    <a href="contaminacion.html">Contaminación</a>
+                    <a href="index.php">Catalogo</a>
+                    <a href="generos.html">Generos:</a>
+                    <a href="encuesta.html">Encuesta</a>
+                    <a href="index0.html">Cerrar sesion</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+        <img src="img/Logo.png" class="logo" align="left" alt="Logo">
+        <div class="boton-registro-regresar"><a href="index0.html">Cerrar sesion</a></div>
+        </div>
+        <div class="barra-superior2"></div>
+        <center><h1><font color = "#FFFFFF"><i>🎬Encuesta🎥</i></font></h1></center>
+    </header>
+
+    <main>
+        <center>
+        <form  action="encuesta-r.php" method="post">
+        <div class="encuesta">
+            <!-- Pregunta 1 -->
+            <div class="preguntas">
+                <span>1. Ingresa tu correo</span><br><br>
+  						    <input type="email" placeholder="Correo Electrónico" name="p1" required>
+            </div>
+        </div>
+        <!-- pregunta 2 -->
+        <div class="encuesta">
+            <div class="preguntas">
+                <span>2. Ingresa tu nombre de usuario</span><br><br>
+  				<input type="text" placeholder="Usuario" name="p2" required>
+            </div>
+        </div>
+            
+            <!-- pregunta 3 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>3. ¿Qué opinas del contenido de la pagina?</span><br><br>
+                    <input type="radio" name="p3" value="Buena" required>Buena<br>
+                    <input type="radio" name="p3" value="Mala" required>Mala<br>
+                    <input type="radio" name="p3" value="Masomenos" required>Masomenos<br>
+                </div>
+            </div>
+            
+            <!-- pregunta 4 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>4. ¿Encontraste el contenido que buscabas?</span><br><br>
+                    <input type="radio" name="p4" value="Si" required>Si<br>
+                    <input type="radio" name="p4" value ="No" required>No<br>
+                    <input type="radio" name="p4" value ="Me falto informacion" required>Me falto informacion<br>
+                </div>
+            </div>
+            
+            <!-- pregunta 5 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>5. ¿Crees que falta informacion a tomar en cuenta</span><br><br>
+                    <input type="radio" name="p5" value="Si" required>Si<br>
+                    <input type="radio" name="p5" value="No" required>No<br><br>
+                    <input type="radio" name="p5" value="Complementar el contenido" required>complementar el contenido<br><br>
+                    <div>
+                        <span>¿Cuál?</span><br><br>
+                        <textarea placeholder="Informar" cols="50" rows="5" name="c-p5"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- pregunta 6 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>6. ¿Se te dificulto utilizar la pagina?</span><br><br>
+                   <input type="radio" name="p6" value="Si" required>Si<br>
+                   <input type="radio" name="p6" value="No" required>No<br>
+                    <input type="radio" name="p6" value="Masomenos" required>Masomenos<br><br>
+                    <div>
+                        <span>¿Por qué?</span><br><br>
+                        <textarea placeholder="Comentar" cols="50" rows="5" name="p-p6"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- pregunta 7 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>7. ¿Llegaste a notar alguna anomalia o error en el funcionamiento de la pagina?</span><br><br>
+                    <input type="radio" name="p7" value = "Si" required>Si<br>
+                    <input type="radio" name="p7" value="No" required>No<br><br>
+                    <div>
+                        <span>¿Cuál?</span><br><br>
+                        <textarea placeholder="Reportar" cols="50" rows="5" name="c-p7"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- pregunta 8 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>8. ¿Cómo se podria mejorar el contenido de la página?</span><br><br>
+                    <textarea placeholder="Tus opiniones y comentarios" cols="50" rows="5" name="p8" required></textarea>
+                </div>
+            </div>
+            
+            <!-- pregunta 9 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>9. Recomendarias la pagina</span><br><br>
+                    <input type="radio" name="p9" value="Si" required>Si<br>
+                    <input type="radio" name="p9" value="No" required>No<br>
+                </div>
+            </div>
+            
+            <!-- pregunta 10 -->
+            <div class="encuesta">
+                <div class="preguntas">
+                    <span>10. ¿Cuántas estrellas le das a nuestra página?</span><br><br>
+                    <select name="p10" required>
+                        <option value="1">⭐
+                        <option value="2">⭐⭐
+                        <option value="3">⭐⭐⭐
+                        <option value="4">⭐⭐⭐⭐
+                        <option value="5">⭐⭐⭐⭐⭐
+                    </select><br>
+                </div>
+            </div>
+            <div class="botones-encuesta">
+                <input type="submit" class="boton-enviar" value="Enviar">
+                <input type="reset" class="boton-borrar" value="Borrar">
+            </div>
+        </form></center>
+    
+    </main>
+
+    
+    <footer class="barra-inferior1">
+        <div class="">
+            <div class="fila2 inline">
+                <span class="">Contacto:</span>
+                <span class="fila2">22 21 74 82 57</span>
+                <span class="fila3">22 15 78 66 23</span>
+        </div>
+            <center><span class="fila inline">🎬The Movies🎥®</span></center>
+            <div class="boton-creditos"><a href="creditos.html">Creditos</a></div>
+        </div>
+    </footer>
+</body>
+</html>
